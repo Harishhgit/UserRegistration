@@ -1,0 +1,67 @@
+﻿@model Registrationform.Models.Userdetails
+
+@{
+    ViewData["Title"] = "Useredit";
+}
+
+<style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style>
+
+
+<h4>Update user details</h4>
+
+<hr />
+<div class="container">    
+        <form asp-action="Useredit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId" />
+
+            <div class="form-group mb-3">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Contact" class="control-label"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="DOB" class="control-label"></label>
+                <input asp-for="DOB" class="form-control" />
+                <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+</div>
+
+<div>
+    <a asp-action="Dashboard">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <script type="text/javascript">
+            toastr.error('TempData["ErrorMessage"]');
+        </script>
+    }
+}

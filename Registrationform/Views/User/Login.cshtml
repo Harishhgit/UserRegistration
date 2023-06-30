@@ -1,0 +1,62 @@
+﻿@model Registrationform.Models.Userdetails
+
+@{
+    ViewData["Title"] = "Login";
+ }
+
+ <style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style
+
+<h4>Login</h4>
+
+<hr />
+
+<div class="container">
+
+        <form asp-action="Login">
+           @* <span class="text-danger">@ViewBag.Message</span> *@
+            
+             <div class="form-group mb-3">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group mb-3">
+                <label asp-for="Pwd" class="control-label"></label>
+                <input asp-for="Pwd" class="form-control" />
+                <span asp-validation-for="Pwd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+
+        </form>
+</div>
+
+<div>
+    <a asp-action="Userregister">Click Here To Register</a>
+</div>
+<div>
+    <a asp-action="Forgotpassword">Forgot Password?</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");        
+
+    }
+    @if (ViewBag.Message != null)
+    {
+                <script type="text/javascript"> 
+                  toastr.error('@ViewBag.Message');
+                </script>
+    }
+            
+
+}

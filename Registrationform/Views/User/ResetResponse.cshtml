@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Reset Response";
+}
+
+<style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style
+
+
+
+<div class="container">
+    @*<span class="text-success"><strong>@ViewBag.Message</strong></span>
+    <br/>*@
+   
+    <a asp-action="Login">Click Here To Login</a>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    @if (ViewBag.Message != null)
+    {
+                        <script type="text/javascript">
+                          toastr.success('@ViewBag.Message');
+                        </script>
+    }
+}

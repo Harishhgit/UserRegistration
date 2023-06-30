@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\harkhorw\\source\\repos\\WEBAPI\\Registrationform\\Registrationform\\Registrationform.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\harkhorw\\source\\repos\\WEBAPI\\Registrationform\\Registrationform\\Registrationform.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\harkhorw\\source\\repos\\WEBAPI\\Registrationform\\Registrationform\\Registrationform.csproj",
+        "projectName": "Registrationform",
+        "projectPath": "C:\\Users\\harkhorw\\source\\repos\\WEBAPI\\Registrationform\\Registrationform\\Registrationform.csproj",
+        "packagesPath": "C:\\Users\\harkhorw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harkhorw\\source\\repos\\WEBAPI\\Registrationform\\Registrationform\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\harkhorw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "PagedList.Core.Mvc": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

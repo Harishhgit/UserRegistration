@@ -1,0 +1,30 @@
+﻿@model Registrationform.Models.Userdetails
+
+@{
+    ViewData["Title"] = "Deleteuser";
+}
+
+<style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style
+
+<h4>Delete Page</h4>
+<hr />
+
+<div>
+    <h5> Are you sure you want to delete this?</h5>
+    
+   <br />
+    <form asp-action="Deleteuser">
+        <input type="hidden" asp-for="UserId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <br />
+    </form>
+    
+</div>
+<br />
+<div>
+    <a asp-action="Userslist">Back to List</a>
+</div>

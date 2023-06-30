@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Registrationform.Models.Userdetails>
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style
+
+<h4>Hi @ViewBag.User , Welcome to National Resident Registration</h4>
+
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+        <th> @Html.DisplayNameFor(model => model.ProfilePhoto)</th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr><img src="@item.ProfilePhotoUrl" class="rounded"/>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+
+                <td>
+                    <a asp-action="Useredit" asp-route-id="@item.UserId">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<br 
+
+<a asp-controller="User" asp-action="Logout">Logout</a>
+
+@section Scripts {
+
+    @if (TempData["EditResponse"] != null)
+    {
+        <script type="text/javascript">
+            toastr.success('@TempData["EditResponse"]');
+        </script>
+    }
+}
+
+

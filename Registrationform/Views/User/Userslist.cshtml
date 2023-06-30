@@ -1,0 +1,118 @@
+﻿@model IEnumerable<Registrationform.Models.Userdetails>
+
+@{
+    ViewData["Title"] = "Userslist";
+
+    Pager pager = new Pager();
+
+    int pageNo = 0;
+
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+
+    }
+}
+
+<style>
+    main{
+        background-color : #b6e0e5f2;
+    }
+</style>
+
+<h4>All User Information</h4>
+
+<hr />
+
+<table class="table">
+     <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+@foreach (var item in Model)
+{
+    <tbody> 
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            
+            <td> 
+                <a asp-action="Adminedit" asp-route-id="@item.UserId">Edit</a> |
+                <a asp-action="Deleteuser" asp-route-id="@item.UserId">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+}
+</table>
+
+
+<div class="container">
+    @if (pager.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-end">
+            @if (pager.CurrentPage > 1)
+            {
+             <li class="page-item">
+                 <a class="page-link" asp-controller="User" asp-action="Userslist" asp-route-pg="1">First</a>
+             </li>
+             <li>
+                 <a class="page-link" asp-controller="User" asp-action="Userslist" asp-route-pg="@(pager.CurrentPage -1)">Previous</a>
+             </li>
+            }
+
+            @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+            {
+            <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
+                <a class="page-link" asp-controller="User" asp-action="Userslist" asp-route-pg="@pge"> @pge </a>
+            </li>
+            }
+
+            @if (pager.CurrentPage < pager.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-controller="User" asp-action="Userslist" asp-route-pg ="@(pager.CurrentPage +1)">Next</a>
+                </li>
+                <li>
+                    <a class="page-link" asp-controller="User" asp-action="Userslist" asp-route-pg="@(pager.TotalPages)">Last</a>
+                </li>
+            }
+        </ul>
+    }
+</div>
+<br />
+<br />
+<a  asp-controller="User" asp-action="Logout">Logout</a>
+
+@section Scripts {
+
+    @if (TempData["Message"] != null)
+    {
+        <script type="text/javascript">
+            toastr.success('@TempData["Message"]');
+        </script>
+    }
+}
