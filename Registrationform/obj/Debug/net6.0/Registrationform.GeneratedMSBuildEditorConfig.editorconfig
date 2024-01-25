@@ -9,69 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Registrationform
 build_property.RootNamespace = Registrationform
-build_property.ProjectDir = c:\Users\harkhorw\source\repos\WEBAPI\Registrationform\Registrationform\
+build_property.ProjectDir = D:\Ddownloads\Gitdemo\UserRegistration\Registrationform\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\harkhorw\source\repos\WEBAPI\Registrationform\Registrationform
+build_property.MSBuildProjectDirectory = D:\Ddownloads\Gitdemo\UserRegistration\Registrationform
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Adminedit.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Adminedit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZG1pbmVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Dashboard.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Deleteuser.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Deleteuser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGV1c2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Forgotpassword.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Forgotpassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RwYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Index.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Login.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/ResetPassword.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/ResetResponse.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/ResetResponse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFJlc3BvbnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Useredit.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Useredit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyZWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Userregister.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Userregister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VycmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/User/Userslist.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/User/Userslist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2Vyc2xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/_ViewImports.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/_ViewStart.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/harkhorw/source/repos/WEBAPI/Registrationform/Registrationform/Views/Shared/_Layout.cshtml]
+[D:/Ddownloads/Gitdemo/UserRegistration/Registrationform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i8z8twv651
